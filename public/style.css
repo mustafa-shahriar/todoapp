@@ -19,7 +19,7 @@ body{
 
 .custome_transition {
     overflow: hidden;
-    transition: all 400ms ease;
+    transition: all 300ms ease;
 }
 
 .height-zero {
