@@ -1,7 +1,5 @@
 let tasks = JSON.parse(localStorage.getItem("tasksArray")) || [];
 
-
-
 function updateLocalStorage(){
   localStorage.setItem(
     "tasksArray",
@@ -42,6 +40,9 @@ function inputReceived() {
     tasks.push({ title: inputField.value, completed: false });
     inputField.value = "";
     render();
+    const addedEdelement = document.querySelector(`.childeNo${tasks.length-1}`);
+    addedEdelement.classList.add("custome_animation");
+    inputField.blur();
   }
   updateLocalStorage();
 }
